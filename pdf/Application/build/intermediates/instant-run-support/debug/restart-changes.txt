@@ -1,0 +1,1 @@
+CHANGED,/Users/toobler/Documents/projects/0MyBackUp/pdf/Application/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/android/pdfrendererbasic/PdfRendererBasicFragment.class

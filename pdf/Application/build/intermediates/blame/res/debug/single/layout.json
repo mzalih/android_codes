@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/toobler/Documents/projects/0MyBackUp/pdf/Application/build/intermediates/res/merged/debug/layout/imagecell.xml",
+        "source": "/Users/toobler/Documents/projects/0MyBackUp/pdf/Application/src/main/res/layout/imagecell.xml"
+    },
+    {
+        "merged": "/Users/toobler/Documents/projects/0MyBackUp/pdf/Application/build/intermediates/res/merged/debug/layout/activity_main_real.xml",
+        "source": "/Users/toobler/Documents/projects/0MyBackUp/pdf/Application/src/main/res/layout/activity_main_real.xml"
+    },
+    {
+        "merged": "/Users/toobler/Documents/projects/0MyBackUp/pdf/Application/build/intermediates/res/merged/debug/layout/fragment_pdf_renderer_basic.xml",
+        "source": "/Users/toobler/Documents/projects/0MyBackUp/pdf/Application/src/main/res/layout/fragment_pdf_renderer_basic.xml"
+    }
+]
