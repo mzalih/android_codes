@@ -2,14 +2,14 @@
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         try {
-            Resources res = getPackageManager().getResourcesForApplication("com.tapendium.mdm");
-            Log.d("LOG", res.getIdentifier("global_admin_page", "layout", "com.tapendium.mdm") + "");
+            Resources res = getPackageManager().getResourcesForApplication("com.mdm");
+            Log.d("LOG", res.getIdentifier("global_admin_page", "layout", "com.mdm") + "");
             setTheme(R.style.Theme_Radisson);
             ImageButton imv = new ImageButton(getApplicationContext());
             setContentView(imv);
 
-            Drawable img = res.getDrawable(res.getIdentifier("icon_settings", "drawable", "com.tapendium.mdm"), null);
-            //imv.setBackground(res.getDrawable(res.getIdentifier("settings_button", "drawable", "com.tapendium.mdm"), null)); //settings_button
+            Drawable img = res.getDrawable(res.getIdentifier("icon_settings", "drawable", "com.mdm"), null);
+            //imv.setBackground(res.getDrawable(res.getIdentifier("settings_button", "drawable", "com.mdm"), null)); //settings_button
            imv.setBackground(doit());
             imv.setImageDrawable(img);
         } catch (Exception e) {
