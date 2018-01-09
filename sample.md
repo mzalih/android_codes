@@ -3,13 +3,13 @@
         super.onCreate(savedInstanceState);
         try {
             Resources res = getPackageManager().getResourcesForApplication("com.mdm");
-            Log.d("LOG", res.getIdentifier("global_admin_page", "layout", "com.mdm") + "");
-            setTheme(R.style.Theme_Radisson);
+            Log.d("LOG", res.getIdentifier("global_admin_page", "layout", "com.mza") + "");
+            setTheme(R.style.Theme_Radar);
             ImageButton imv = new ImageButton(getApplicationContext());
             setContentView(imv);
 
-            Drawable img = res.getDrawable(res.getIdentifier("icon_settings", "drawable", "com.mdm"), null);
-            //imv.setBackground(res.getDrawable(res.getIdentifier("settings_button", "drawable", "com.mdm"), null)); //settings_button
+            Drawable img = res.getDrawable(res.getIdentifier("icon_settings", "drawable", "com.mza"), null);
+            //imv.setBackground(res.getDrawable(res.getIdentifier("settings_button", "drawable", "com.mza"), null)); //settings_button
            imv.setBackground(doit());
             imv.setImageDrawable(img);
         } catch (Exception e) {
@@ -50,4 +50,15 @@
             e.printStackTrace();
         }
         return myLayout;
+    }
+    
+      public static boolean isServiceRunning(Context context, Class serviceClass) {
+        ActivityManager manager =
+                (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
+        for (RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {
+            if (serviceClass.getName().equals(service.service.getClassName())) {
+                return true;
+            }
+        }
+        return false;
     }
